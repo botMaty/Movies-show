@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ director.dname }}</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+<body class="no-transition">
+
+  <button class="mode-toggle" id="modeToggle">☀️</button>
+
+  <div class="director-container">
+    <img src="{{ url_for('static', filename=director.photo_path) }}" class="director-avatar" alt="{{ director.dname }}"/>
+    <h2 style="margin: 0;">{{ director.dname }}</h2>
+    <p><strong>Movies:</strong> {{ movies_name | join(', ') }}</p>
+  </div>
+
+
+  <script src="../static/js/script.js"></script>
+</body>
+</html>

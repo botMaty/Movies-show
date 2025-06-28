@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Page</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="no-transition">
+
+  <!-- اگر کاربر لاگین کرده بود -->
+  {% if session.get('user') %}
+    <a href="{{ url_for('user') }}">
+      <img src="{{ url_for('static', filename=session['user']['avatar_path']) }}" alt="User" class="user-avatar">
+    </a>
+  {% else %}
+    <!-- اگر لاگین نکرده بود -->
+    <a href="/login_register" class="login-button">Login/Register</a>
+  {% endif %}
+
+  <!-- دکمه دارک/لایت -->
+  <button class="mode-toggle" id="modeToggle">☀️</button>
+
+  <!-- نوار جستجو -->
+  <form class="search-container" action="/search" method="POST">
+    <svg class="search-icon" viewBox="0 0 24 24">
+      <path d="M21 21l-4.35-4.35m1.1-5.4a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"
+            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    <input type="text" class="search-input" name="mname" placeholder="Search..." />
+    <button class="search-button" type="submit">Search</button>
+  </form>
+
+  <script src="../static/js/script.js"></script>
+
+</body>
+</html>

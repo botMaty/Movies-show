@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <title>Login/Register Page</title>
+</head>
+
+<body style="justify-content: center;">
+
+    <button class="mode-toggle" id="modeToggle">☀️</button>
+
+    <div class="login-container" id="login-container">
+        <div class="form-login-container sign-up">
+            <form action="/sign_up" method="post">
+                <h1 style="padding-bottom: 25px; color: var(--text-color);">Create Account</h1>
+                <input type="text" placeholder="Name" name="register-name">
+                <input type="email" placeholder="Email" name="register-email">
+                <input type="password" placeholder="Password" name="register-password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-login-container sign-in">
+            <form action="/sign_in" method="post">
+                <h1 style="padding-bottom: 25px; color: var(--text-color);">Sign In</h1>
+                <input type="email" placeholder="Email" name="login-email">
+                <input type="password" placeholder="Password" name="login-password">
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-login-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

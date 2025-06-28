@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ user.name }}</title>
+  <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+<body class="no-transition">
+
+  <button class="mode-toggle" id="modeToggle">☀️</button>
+
+  <div class="user-container">
+
+    <img src="{{ url_for('static', filename=user.avatar_path) }}"
+      alt="{{ user.name }}"
+      class="profile-avatar poster-image" />
+
+
+    <h2 style="margin: 0;">{{ user.uname }}</h2>
+
+    <div class="user-information-container" >
+      <p style="color: var(--text-color); opacity: 0.8;"><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Member since:</strong> {{ user.registration_date }}</p>
+      <p"><strong>Bio:</strong> {{ user.bio }}</p>
+    </div>
+
+    <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+
+  </div>
+
+  <div id="imageModal" class="image-modal">
+    <img id="modalImage" src="" alt="Full Image" />
+  </div>
+
+  <script src="../static/js/script.js"></script>
+</body>
+</html>
