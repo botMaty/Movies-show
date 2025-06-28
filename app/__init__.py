@@ -104,7 +104,7 @@ def create_app():
     def user():
         if 'user' in session:
             user = session['user']
-            if isinstance(user['registration_date'], str):
+            if ',' in user['registration_date']:
                 user['registration_date'] = datetime.strptime(user['registration_date'], "%a, %d %b %Y %H:%M:%S %Z").strftime('%Y-%m-%d')
             return render_template('user_page.html', user=user)
         else:
