@@ -61,8 +61,8 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate</code></pre>
 
 <hr>
 
-<h2>📝 </h2>
-<p>Edit <strong>db_inf</strong> in <strong>config.py</strong> and set your MySQL credentials</p>
+<h2>🛢️ SQL Queries</h2>
+<p>You can use the queris folder to create databases and tables, and add data.</p>
 
 <hr>
 
@@ -87,7 +87,7 @@ Movies_show
 <hr>
 
 <h2>📜 License</h2>
-<p>This project is licensed under the <strong>MIT License</strong></p>
+<p>This project is licensed under the <strong>MIT License</strong>.</p>
 
 <hr>
 
