@@ -55,6 +55,10 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate</code></pre>
     <pre><code>db_inf = "..."</code></pre>
   </li>
 
+  <li><strong>Run the Flask app</strong>
+    <pre><code>python run.py</code></pre>
+  </li>
+
   <li><strong>Open your browser</strong> and go to <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a>
   </li>
 </ol>
