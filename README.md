@@ -62,7 +62,7 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate</code></pre>
 <hr>
 
 <h2>🛢️ SQL Queries</h2>
-<p>You can use the <strong>queries</strong> folder to create databases and tables, and add data.</p>
+<p>You can use the <strong>queries</strong> folder to create tables, and add data.</p>
 
 <hr>
 
