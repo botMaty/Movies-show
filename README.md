@@ -47,10 +47,6 @@ source venv/bin/activate  # On Windows use venv\Scripts\activate</code></pre>
     <pre><code>pip install -r requirements.txt</code></pre>
   </li>
 
-  <li><strong>Install dependencies</strong>
-    <pre><code>pip install -r requirements.txt</code></pre>
-  </li>
-
   <li><strong>Configure the database in config.py</strong>
     <pre><code>db_inf = "..."</code></pre>
   </li>
